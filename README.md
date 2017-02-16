@@ -30,27 +30,20 @@ To generate the server.pem key file (enter "password" and "localhost"):
 
 The client.pem and server.pem certificates are valid for one year.
 
-Required files in HOME/CA directory:
-
-```
-openssl.cnf
-root.sh
-cert.sh
-```
 
 Files generated
 ---------------
 
-file            | goal
-----------------|-------------------------
-`cacert.pem`	| root certificate for distribution
-`root.pem`	| root CA (to sign client/server key files, do not distribute)
-`rootkey.pem`	| private key
-`rootreq.pem`	| sign request
-`root.srl`	| serial number
-`client.pem`	| client key file
-`clientkey.pem`	| private key
-`clientreq.pem`	| sign request
-`server.pem`	| server key file
-`serverkey.pem`	| private key
-`serverreq.pem`	| sign request
+file          | goal
+--------------|-------------------------
+cacert.pem    | root certificate for distribution
+root.pem      | root CA (to sign client/server key files, do not distribute)
+rootkey.pem   | private key
+rootreq.pem   | sign request
+root.srl      | serial number
+client.pem    | client key file
+clientkey.pem | private key
+clientreq.pem | sign request
+server.pem    | server key file
+serverkey.pem | private key
+serverreq.pem | sign request
